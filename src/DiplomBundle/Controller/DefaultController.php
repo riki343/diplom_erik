@@ -12,6 +12,6 @@ class DefaultController extends Controller
      */
     public function indexAction()
     {
-        return $this->render('DiplomBundle:Default:index.html.twig');
+        return $this->render('DiplomBundle::products.html.twig');
     }
 }

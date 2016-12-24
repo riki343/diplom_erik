@@ -41,29 +41,7 @@
 </nav>
 
 <section id="body" class="container">
-    <ul class="grid row">
-        <li class="grid-item-container col-md-3">
-            <a href="#" class="grid-item">
-                <div class="grid-item-image" style="background-image: url({{ asset('test/i7.jpg') }})"></div>
-                <div class="grid-item-header">iPhone 7</div>
-            </a>
-        </li>
-        <li class="grid-item-container col-md-3">
-            <a href="#" class="grid-item">
-                <div class="grid-item-image" style="background-image: url({{ asset('test/i6.jpg') }})"></div>
-                <div class="grid-item-header">iPhone 6</div>
-            </a>
-        </li>
-        <li class="grid-item-container col-md-3">
-            <a href="#" class="grid-item">
-                <div class="grid-item-image" style="background-image: url({{ asset('test/i5.png') }})"></div>
-                <div class="grid-item-header">iPhone 5</div>
-                <div class="grid-item-description">
-                    The iPhone 6 and iPhone 6 Plus are smartphones designed and marketed by Apple Inc. The devices are part of the iPhone series and were announced on September 9, 2014, and released on September 19, 2014.[16] The iPhone 6 and iPhone 6 Plus jointly serve as successors to the iPhone 5S and were themselves replaced as flagship devices of the iPhone series by the iPhone 6S and iPhone 6S Plus on September 9, 2015.
-                </div>
-            </a>
-        </li>
-    </ul>
+    {% block body %}{% endblock %}
 </section>
 
 
