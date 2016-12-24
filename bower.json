@@ -1,0 +1,17 @@
+{
+  "name": "diplom",
+  "description": "diplom ======",
+  "main": "index.js",
+  "authors": [
+    "vlad <vladislav.kosko@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

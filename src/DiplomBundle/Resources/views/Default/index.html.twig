@@ -1,0 +1,72 @@
+<html>
+
+<head>
+    {% block assets %}
+    <link rel="stylesheet" href="{{ asset('bower_components/bootstrap/dist/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+
+    <script type="text/javascript" src="{{ asset('bower_components/jquery/dist/jquery.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('bower_components/bootstrap/dist/js/bootstrap.min.js') }}"></script>
+    {% endblock %}
+</head>
+
+<body>
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Brand</a>
+        </div>
+
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Link</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<section id="body" class="container">
+    <ul class="grid row">
+        <li class="grid-item-container col-md-3">
+            <a href="#" class="grid-item">
+                <div class="grid-item-image" style="background-image: url({{ asset('test/i7.jpg') }})"></div>
+                <div class="grid-item-header">iPhone 7</div>
+            </a>
+        </li>
+        <li class="grid-item-container col-md-3">
+            <a href="#" class="grid-item">
+                <div class="grid-item-image" style="background-image: url({{ asset('test/i6.jpg') }})"></div>
+                <div class="grid-item-header">iPhone 6</div>
+            </a>
+        </li>
+        <li class="grid-item-container col-md-3">
+            <a href="#" class="grid-item">
+                <div class="grid-item-image" style="background-image: url({{ asset('test/i5.png') }})"></div>
+                <div class="grid-item-header">iPhone 5</div>
+                <div class="grid-item-description">
+                    The iPhone 6 and iPhone 6 Plus are smartphones designed and marketed by Apple Inc. The devices are part of the iPhone series and were announced on September 9, 2014, and released on September 19, 2014.[16] The iPhone 6 and iPhone 6 Plus jointly serve as successors to the iPhone 5S and were themselves replaced as flagship devices of the iPhone series by the iPhone 6S and iPhone 6S Plus on September 9, 2015.
+                </div>
+            </a>
+        </li>
+    </ul>
+</section>
+
+
+</body>
+
+</html>
